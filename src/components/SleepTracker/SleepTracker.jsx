@@ -1,9 +1,21 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../SleepTracker/SleepTracker.module.css";
 
 export default function SleepTracker() {
-  const [start, setStart] = useState("");
-  const [end, setEnd] = useState("");
+  const [start, setStart] = useState(() => {
+    return localStorage.getItem("sleepStart") || "";
+  });
+  const [end, setEnd] = useState(() => {
+    return localStorage.getItem("sleepEnd") || "";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("sleepStart", start);
+  }, [start]);
+
+  useEffect(() => {
+    localStorage.setItem("sleepEnd", end);
+  }, [end]);
 
   const calculateSleep = () => {
     if (!start || !end) return 0;

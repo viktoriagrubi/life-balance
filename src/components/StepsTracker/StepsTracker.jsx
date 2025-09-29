@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../StepsTracker/StepsTracker.module.css";
 
 export default function StepsTracker() {
-  const [steps, setSteps] = useState("");
+  const [steps, setSteps] = useState(() => {
+    return localStorage.getItem("steps") || "";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("steps", steps);
+  }, [steps]);
 
   return (
     <div className={styles.card}>
