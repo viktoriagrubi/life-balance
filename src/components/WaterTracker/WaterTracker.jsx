@@ -1,8 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from "../WaterTracker/WaterTracker.module.css";
 
 export default function WaterTracker() {
-  const [glasses, setGlasses] = useState(0);
+  const [glasses, setGlasses] = useState(() => {
+    return Number(localStorage.getItem("glasses")) || 0;
+  });
+
+  useEffect(() => {
+    localStorage.setItem("glasses", glasses);
+  }, [glasses]);
 
   return (
     <div className={styles.card}>
