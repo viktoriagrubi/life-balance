@@ -36,25 +36,8 @@ Vite
 CSS Modules – modular and scoped styling
 
 📂 Project Structure
-life-balance/
-├── src/
-│   ├── components/
-│   │   ├── Dashboard/
-│   │   │   ├── Dashboard.jsx
-│   │   │   └── Dashboard.module.css
-│   │   ├── WaterTracker/
-│   │   │   ├── WaterTracker.jsx
-│   │   │   └── WaterTracker.module.css
-│   │   ├── StepsTracker/
-│   │   │   ├── StepsTracker.jsx
-│   │   │   └── StepsTracker.module.css
-│   │   ├── SleepTracker/
-│   │   │   ├── SleepTracker.jsx
-│   │   │   └── SleepTracker.module.css
-│   └── App.jsx
-├── package.json
-├── vite.config.js
-└── README.md
+<img width="399" height="516" alt="image" src="https://github.com/user-attachments/assets/71b06ec6-8123-4737-ba08-7a7130a7930d" />
+
 
 🔍 Highlights
 
@@ -71,16 +54,13 @@ Clone the repository:
 git clone https://github.com/your-username/life-balance.git
 cd life-balance
 
-
 Install dependencies:
 
 npm install
 
-
 Run in development mode:
 
 npm run dev
-
 
 Open in browser:
 
