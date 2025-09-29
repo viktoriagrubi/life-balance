@@ -1,5 +1,44 @@
 .dashboard {
-  display: grid;
-  gap: 1rem;
-  padding: 1rem;
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #c6dae8, #ffffff);
+  min-height: 100vh;
+}
+
+.trackers {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.titledsh {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+  color: #23293f;
+
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+
+  animation: fadeInScale 1s ease both;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .trackers {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .card {
+    width: 90% !important;
+    max-width: 350px;
+  }
 }

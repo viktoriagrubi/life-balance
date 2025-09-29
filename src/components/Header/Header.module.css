@@ -1,7 +1,52 @@
 .header {
   text-align: center;
-  padding: 1rem;
-  background-color: #00796b;
-  font-family: Arial, sans-serif;
-  color: white;
+  padding: 2.5rem 1rem;
+  background: linear-gradient(135deg, #57638f, #26a69a, #57638f);
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #c6dae8;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+
+  animation: fadeSlideDown 0.8s ease both;
+  position: relative;
+  overflow: hidden;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-25deg);
+  animation: shine 5s infinite;
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  50% {
+    left: 120%;
+  }
+  100% {
+    left: 120%;
+  }
 }

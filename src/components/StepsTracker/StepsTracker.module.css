@@ -1,32 +1,47 @@
 .card {
-  background-color: #e0f7fa;
-  border-radius: 12px;
-  padding: 20px;
-  width: 200px;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  width: 240px;
   max-width: 300px;
-  margin: 20px auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1rem auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 h2 {
-  margin-bottom: 12px;
+  margin-bottom: 1rem;
   color: #00796b;
+  font-size: 1.3rem;
 }
 
 input {
-  width: 80%;
-  padding: 8px;
-  border-radius: 6px;
+  width: 85%;
+  padding: 10px;
+  border-radius: 12px;
   border: 1px solid #b2dfdb;
-  margin-bottom: 12px;
-  font-size: 16px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
   text-align: center;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus {
+  border: 1px solid #00796b;
+  box-shadow: 0 0 8px rgba(0, 121, 107, 0.4);
 }
 
 p {
-  font-size: 16px;
+  font-size: 1rem;
   color: #004d40;
-  font-weight: bold;
+  font-weight: 600;
 }
