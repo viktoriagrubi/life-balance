@@ -11,7 +11,7 @@ The app allows you to track three essential aspects of a balanced lifestyle:
 
 🎥 Demo
 
-
+https://youtu.be/wzGNH_GeuF0
 
 🚀 Features
 
@@ -34,9 +34,6 @@ Vite
  – fast bundler & dev server
 
 CSS Modules – modular and scoped styling
-
-📂 Project Structure
-<img width="399" height="516" alt="image" src="https://github.com/user-attachments/assets/71b06ec6-8123-4737-ba08-7a7130a7930d" />
 
 
 🔍 Highlights
