@@ -1,68 +1,101 @@
-📌 Life Balance – Habit Tracker
+🌱 Life Balance — Habit Tracker
+✅ Overview
 
-Life Balance is a simple MVP web application built with React to help users monitor their daily health and well-being habits.
-The app allows you to track three essential aspects of a balanced lifestyle:
+Life Balance is a habit tracker web application built with React to help users manage daily habits and track progress.
+The app allows users to add new habits, increment habit counts, and reset all habits, showcasing dynamic UI updates and component‑based React logic.
 
-💧 number of glasses of water,
+🔍 Project Description
 
-🚶‍♂️ daily steps,
+This application enables users to:
 
-😴 hours of sleep.
+Add new habits with custom names
 
-🎥 Demo
+Increment habit count when a habit is performed
 
-https://youtu.be/wzGNH_GeuF0
+Delete habits
 
-🚀 Features
+Reset all habits to zero
 
-Water Tracker – log the number of glasses of water you drink each day.
+The project demonstrates state management with React Hooks, component structure, and user interaction handling in a single‑page application.
 
-Steps Tracker – record your daily step count.
+🛠️ Technologies
 
-Sleep Tracker – keep track of your sleep hours.
-
-Dashboard – a single view that combines all trackers.
-
-Clean, minimal UI with consistent card layout for all trackers.
-
-🛠️ Tech Stack
+This project was built using:
 
 React
- – frontend framework
 
-Vite
- – fast bundler & dev server
+JavaScript (ES6+)
 
-CSS Modules – modular and scoped styling
+HTML5
 
+CSS3
 
-🔍 Highlights
+No backend is currently used — the app runs entirely in the browser using React state.
 
-Reusable component pattern – all trackers follow the same state + input + display logic.
+✨ Key Features
 
-Centralized Dashboard – integrates all trackers into one easy-to-use view.
+Dynamic habit list rendering
 
-Consistent styling – uniform card size and layout across all trackers for better UX.
+Increment habit counts with a button
 
-⚙️ Getting Started
+Delete habits individually
+
+Reset all habits with one click
+
+Reusable React components
+
+📦 Installation & Running
 
 Clone the repository:
 
-git clone https://github.com/your-username/life-balance.git
+git clone https://github.com/viktoriagrubi/life-balance.git
+
+
+Navigate into the folder:
+
 cd life-balance
+
 
 Install dependencies:
 
 npm install
 
-Run in development mode:
 
-npm run dev
+Run the app:
 
-Open in browser:
+npm start
 
-http://localhost:5173
 
-📌 Author
+Open in your browser:
+http://localhost:3000
+
+🎯 What You Learn
+
+This project demonstrates your ability to:
+
+Build interactive UI with React
+
+Manage application state using React Hooks
+
+Create reusable and modular components
+
+Handle user events in React
+
+🚀 Potential Enhancements
+
+To further improve the application, you could add:
+
+Persisting habits in localStorage
+
+Editing habit names
+
+Habit streak tracking and analytics
+
+Responsive design improvements
+
+Integration with backend or Firebase for user accounts
+
+👩‍💻 Author
 
 Wiktoria Grubizna
+GitHub: https://github.com/viktoriagrubi
